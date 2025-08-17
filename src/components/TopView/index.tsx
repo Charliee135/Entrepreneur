@@ -15,7 +15,7 @@ export const TopView = () => {
     >
       <h1
         style={{
-          color: "#0A74DA",
+          color: "white",
           fontSize: 35,
           fontWeight: "500",
           textAlign: "center",

@@ -1,5 +1,7 @@
 import React from "react";
-import { Row, Col, Avatar, Card, Image as AntdImage, Space } from "antd";
+import { Row, Col, Space } from "antd";
+import Card from "antd/es/card";
+import AntdImage from "antd/es/image";
 import Image from "next/image";
 import { Divider } from "@/components/Divider";
 
