@@ -1,0 +1,21 @@
+/* 未激活 */
+/* .my-custom-dots .slick-dots li button {
+  background: red !important;
+  opacity: 0.5;
+} */
+
+/* 激活 */
+/* .my-custom-dots .slick-dots li.slick-active button {
+  background: red !important;
+  opacity: 1;
+} */
+
+:global(.my-custom-dots.slick-dots li button) {
+  background: blue !important;
+  opacity: 0.5;
+}
+
+:global(.my-custom-dots.slick-dots li.slick-active button) {
+  background: blue !important;
+  opacity: 1;
+}
