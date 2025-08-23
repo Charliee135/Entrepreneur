@@ -2,6 +2,7 @@ import React from "react";
 import { Table } from "antd";
 import type { TableProps } from "antd";
 import Image from "next/image";
+import { Divider } from "@/components/Divider";
 
 interface DataType {
   key: string;
@@ -88,21 +89,66 @@ const data: DataType[] = [
 export const BBOProduct: React.FC = () => {
   return (
     <div>
+      <div style={{ marginBottom: "20px" }}>
+        <h1
+          style={{
+            textAlign: "start",
+            fontSize: "24px",
+            fontWeight: 700,
+            color: "#1677ff",
+          }}
+        >
+          产品介绍
+        </h1>
+        <Divider />
+      </div>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <Image
+          src="/assets/产品介绍/bg.png"
+          width={450}
+          height={320}
+          alt=""
+          style={{ borderRadius: "10px" }}
+        />
+        <h1
+          style={{
+            marginLeft: "20px",
+            color: "grey",
+            fontSize: "17px",
+            fontWeight: "500",
+            lineHeight: "2",
+          }}
+        >
+          抗灰迹BBO晶体能够承受更高的激光功率密度，适用于高功率密度的深紫外激光器，确保在高能量输出的芯片质检过程中晶体不易损伤，延长使用寿命。同时通过改进工艺有效抑制灰迹形成，保证激光输出的长期稳定性。抗灰迹BBO晶体还可透过波段范围宽（190nm~3500nm），适用于深紫外激光器的多种频率转换需求。﻿
+        </h1>
+      </div>
+      <div style={{ marginBottom: "20px", marginTop: "40px" }}>
+        <h1
+          style={{
+            textAlign: "start",
+            fontSize: "24px",
+            fontWeight: 700,
+            color: "#1677ff",
+          }}
+        >
+          横向对比
+        </h1>
+        <Divider />
+      </div>
       <h1
         style={{
           fontFamily: "Arial, sans-serif",
           fontWeight: "bold",
           color: "#ff6a00",
-          fontSize: "20px",
+          fontSize: "25px",
           justifySelf: "center",
+          fontStyle: "italic",
         }}
       >
         使用寿命长达3000h
       </h1>
       <div
         style={{
-          // background: "blue",
-          padding: "20px 30px",
           borderRadius: "10px",
           maxWidth: "85%",
           margin: "0 auto",
@@ -113,20 +159,24 @@ export const BBOProduct: React.FC = () => {
         }}
       >
         <div>
-          <div style={{ marginLeft: "50px" }}>
+          <div
+            style={{
+              marginRight: "40px",
+            }}
+          >
             <Image
               src="/assets/产品介绍/晶体.png"
               alt=""
-              width={230}
-              height={210}
+              width={250}
+              height={230}
               style={{ borderRadius: "10px" }}
             />
             <Image
               src="/assets/产品介绍/improve晶体.png"
               alt=""
-              width={230}
+              width={250}
               height={220}
-              style={{ borderRadius: "10px", marginTop: "10px" }}
+              style={{ borderRadius: "10px", marginTop: "45px" }}
             />
           </div>
         </div>

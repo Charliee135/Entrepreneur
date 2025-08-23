@@ -28,7 +28,7 @@ const experts = [
     title: "齐鲁工业大学（山东省科学院）副校长（副院长）",
     avatar: "/assets/院士推荐/许.png",
     letter: "/assets/院士推荐信/许.jpeg",
-    desc: "教育部新世纪优秀人才支持计划入选者 全国百篇优秀博士学位论文提名论文获得者 山东省有突出贡献的青年专家 山东省自然科学杰出青年基金获得者 中国人民政治协商会议山东省第十三届委员会委员",
+    desc: "教育部新世纪优秀人才支持计划入选者，全国百篇优秀博士学位论文提名论文获得者，山东省有突出贡献的青年专家，山东省自然科学杰出青年基金获得者，中国人民政治协商会议山东省第十三届委员会委员",
     quote: "缓解我国半导体产业链核心光源’窒息之痛‘。",
   },
   {
@@ -36,20 +36,21 @@ const experts = [
     title: "国家973计划领域专家",
     avatar: "/assets/院士推荐/王.png",
     letter: "/assets/院士推荐信/王.png",
-    desc: "山东省硅酸盐学会理事长 中国硅酸盐学会晶体生长与材料分会理事长 山东大学国防科技委主任 国家自然科学基金委重大研究计划管理专家",
+    desc: "山东省硅酸盐学会理事长，中国硅酸盐学会晶体生长与材料分会理事长，山东大学国防科技委主任，国家自然科学基金委重大研究计划管理专家",
     quote: "其技术沉淀与执行力实属青年科研团队典范。",
   },
 ];
 
 export const WhyChooseUs: React.FC = () => {
   return (
-    <div style={{ padding: "60px 80px" }}>
-      <Title
+    // <div style={{ padding: "60px 80px" }}>
+    <div>
+      {/* <Title
         level={2}
         style={{ textAlign: "center", marginBottom: "40px", fontWeight: 700 }}
       >
         为什么选择我们？
-      </Title>
+      </Title> */}
 
       <Row gutter={[32, 32]} justify="center">
         {experts.map((exp, index) => (
@@ -64,7 +65,7 @@ export const WhyChooseUs: React.FC = () => {
                 alignItems: "flex-start",
                 padding: 20,
               }}
-              bodyStyle={{ padding: 0 }}
+              //   bodyStyle={{ padding: 0 }}
             >
               <div
                 style={{

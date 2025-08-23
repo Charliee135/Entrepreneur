@@ -3,29 +3,36 @@ import React from "react";
 
 export const TopView = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(/assets/image2.png)`,
-        backgroundSize: "cover",
-        // backgroundPosition: "center",
-        width: "100%",
-        height: "350px",
-        alignContent: "center",
-      }}
-    >
-      <h1
+    <div>
+      <div
         style={{
-          color: "white",
-          fontSize: 35,
-          fontWeight: "500",
-          textAlign: "center",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
         }}
       >
-        芯维（山东）检测科技有限公司
-      </h1>
-      <div style={{ marginTop: "15px", position: "absolute" }}>
-        <Image src="/assets/logo.png" width={100} alt="" preview={false} />
+        <Image src="/assets/logo.png" width={60} alt="" preview={false} />
+        <h1
+          style={{
+            fontSize: 35,
+            fontWeight: "500",
+          }}
+        >
+          芯维（山东）检测科技有限公司
+        </h1>
       </div>
+      <div
+        style={{
+          backgroundImage: `url(/assets/top.png)`,
+          backgroundSize: "cover",
+          // backgroundPosition: "center",
+          width: "100%",
+          height: "300px",
+          // alignContent: "center",
+        }}
+      />
     </div>
   );
 };

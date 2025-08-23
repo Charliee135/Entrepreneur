@@ -4,6 +4,7 @@ import Card from "antd/es/card";
 import AntdImage from "antd/es/image";
 import Image from "next/image";
 import { Divider } from "@/components/Divider";
+import { TopView } from "@/components/TopView";
 
 const data = [
   {
@@ -54,13 +55,14 @@ const honorData = [
   "/assets/荣誉/4171754710484_.pic.jpg",
   "/assets/荣誉/4181754710488_.pic.jpg",
   "/assets/荣誉/4191754710493_.pic.jpg",
-  "/assets/荣誉/4201754710498_.pic.jpg",
+  // "/assets/荣誉/4201754710498_.pic.jpg",
 ];
 
 export const AboutPage: React.FC = () => {
   return (
     <>
-      <Row className="flex flex-row">
+      <TopView />
+      <Row className="flex flex-row" style={{ marginTop: "60px" }}>
         <Col span={8}>
           <h1 style={{ fontSize: "40px", fontWeight: "600", color: "black" }}>
             我们是谁
@@ -138,7 +140,7 @@ export const AboutPage: React.FC = () => {
             </h1>
             <Divider />
           </div>
-          <Image
+          {/* <Image
             src="/assets/荣誉/4091754710391_.pic.jpg"
             width={220}
             height={60}
@@ -149,7 +151,7 @@ export const AboutPage: React.FC = () => {
               borderRadius: "8px",
               justifySelf: "center",
             }}
-          />
+          /> */}
         </Col>
       </Row>
 

@@ -8,6 +8,7 @@ export const Divider: React.FC = () => {
         height: "3px",
         backgroundColor: "#1677ff",
         borderRadius: "5px",
+        marginTop: "8px",
       }}
     />
   );

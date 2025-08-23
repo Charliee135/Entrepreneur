@@ -59,7 +59,9 @@ export const NewsPage: React.FC = () => {
         <Card
           hoverable
           style={{ borderRadius: 12 }}
-          bodyStyle={{ display: "flex", alignItems: "center", gap: 16 }}
+          styles={{
+            body: { display: "flex", alignItems: "center", gap: 16 },
+          }}
         >
           <Image
             src="/assets/新闻/WechatIMG423.png"

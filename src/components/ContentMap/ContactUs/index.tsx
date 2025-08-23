@@ -1,23 +1,41 @@
+import { Divider } from "@/components/Divider";
+import { Card, Image } from "antd";
 import React from "react";
-import { Card } from "antd";
 
 export const ContactUs: React.FC = () => {
   return (
-    <div
-      style={{
-        // background: "#f5f5f5",
-        padding: "40px 20px",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <Card
-        title="联系我们"
+    <div>
+      <Image
+        src="/assets/联系我们/WechatIMG429.jpeg"
+        alt=""
+        width="100%"
+        height={350}
+        preview={false}
         style={{
-          maxWidth: 800,
+          objectFit: "fill",
+          borderRadius: "10px",
+        }}
+      />
+      <div style={{ marginBottom: "20px", marginTop: "20px" }}>
+        <h1
+          style={{
+            textAlign: "start",
+            fontSize: "24px",
+            fontWeight: 700,
+            color: "#1677ff",
+          }}
+        >
+          联系我们
+        </h1>
+        <Divider />
+      </div>
+      <Card
+        style={{
           margin: "0 auto",
           borderRadius: 12,
           boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
           //   background: "#f5f5f5",
+          marginTop: "30px",
         }}
         styles={{
           header: {
