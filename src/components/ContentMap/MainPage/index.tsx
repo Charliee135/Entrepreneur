@@ -5,11 +5,11 @@ import React from "react";
 import { WhyChooseUs } from "../QuestionPage";
 
 const imgUrl = [
+  "/assets/首页/轮播图/3.png",
+  "/assets/首页/轮播图/4.png",
+  "/assets/首页/轮播图/5.png",
   "/assets/首页/轮播图/1.png",
   "/assets/首页/轮播图/2.png",
-  "/assets/首页/轮播图/3.png",
-  "/assets/首页/轮播图/4.jpeg",
-  "/assets/首页/轮播图/5.jpeg",
 ];
 
 const data = [
