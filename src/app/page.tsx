@@ -11,6 +11,7 @@ import {
 } from "@ant-design/icons";
 import { SetStateAction, useState } from "react";
 import { contentMap } from "@/components/ContentMap";
+import Image from "next/image";
 
 const { Content, Sider } = Layout;
 
@@ -69,10 +70,32 @@ export default function Home() {
 
   return (
     <Layout style={{ minHeight: "100vh", background: "#f5f5f5" }}>
-      {/* <TopView /> */}
-
       <Layout style={{ padding: "24px" }}>
         <Sider width={250} style={siderStyle}>
+          <div
+            style={{
+              // height: 64,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "0 16px",
+              fontSize: 15,
+              fontWeight: 500,
+              color: "black",
+              textAlign: "center",
+              flexDirection: "column",
+              marginBottom: "10px",
+            }}
+          >
+            <Image
+              src="/assets/logo.png"
+              alt="公司Logo"
+              width={80}
+              height={80}
+              style={{ marginRight: 5 }}
+            />
+            <h1>芯维（山东）检测科技有限公司</h1>
+          </div>
           <Menu
             onClick={onClick}
             selectedKeys={[menuCurrent]}

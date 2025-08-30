@@ -25,12 +25,11 @@ export const TopView = () => {
       </div>
       <div
         style={{
-          backgroundImage: `url(/assets/top.png)`,
-          backgroundSize: "cover",
-          // backgroundPosition: "center",
+          backgroundImage: `url(/assets/产品介绍/bg2.png)`,
+          backgroundSize: "fill",
           width: "100%",
-          height: "300px",
-          // alignContent: "center",
+          height: "350px",
+          borderRadius: 10,
         }}
       />
     </div>

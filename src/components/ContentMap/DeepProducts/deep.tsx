@@ -162,7 +162,7 @@ export const DeepProducts: React.FC = () => {
       </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Image
-          src="/assets/产品介绍/bg2.png"
+          src="/assets/产品介绍/iron.png"
           width={450}
           height={320}
           alt=""

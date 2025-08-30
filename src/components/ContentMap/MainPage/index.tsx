@@ -20,6 +20,29 @@ const data = [
 export const MainPage: React.FC = () => {
   return (
     <div>
+      <div
+        style={{
+          backgroundImage: `url(/assets/top.png)`,
+          backgroundSize: "cover",
+          width: "100%",
+          height: "290px",
+          borderRadius: 8,
+          marginBottom: "40px",
+        }}
+      />
+      <div style={{ marginBottom: "20px", marginTop: "40px" }}>
+        <h1
+          style={{
+            textAlign: "start",
+            fontSize: "24px",
+            fontWeight: 700,
+            color: "#1677ff",
+          }}
+        >
+          新闻动态
+        </h1>
+        <Divider />
+      </div>
       <Carousel
         autoplay
         draggable
@@ -40,6 +63,7 @@ export const MainPage: React.FC = () => {
               alignItems: "center",
               justifyContent: "center",
               overflow: "hidden",
+              border: "1px solid #e8e8e8",
             }}
           >
             <Image
@@ -66,7 +90,7 @@ export const MainPage: React.FC = () => {
             color: "#1677ff",
           }}
         >
-          新闻动态
+          总结一览
         </h1>
         <Divider />
         <List
